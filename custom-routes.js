@@ -57,7 +57,7 @@ function transformGroup(group, groups, users) {
   if (group.parentKey) {
     const parentGroup = groups.find((g) => g.id === group.parentKey);
     if (parentGroup) {
-      parentGroupInfo = `${parentGroup.id} - ${parentGroup.groupName}`;
+      parentGroupInfo = `${parentGroup.groupCode} - ${parentGroup.groupName}`;
     }
   }
 
