@@ -29,10 +29,10 @@ module.exports = (req, res, next) => {
 
 function transformDataForGroups(groups) {
   const buildGroupHierarchy = (group) => ({
-    key: group.id,
-    groupCode: group.groupCode,
-    groupName: group.groupName,
-    isActive: group.isActive,
+    id: group.id,
+    code: group.groupCode,
+    name: group.groupName,
+    status: group.isActive,
     usersCount: group.users.length,
     children: groups
       .filter((g) => g.parentKey === group.id)
